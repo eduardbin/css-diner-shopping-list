@@ -28,14 +28,15 @@ header h1 {
 }
 
 .cs-shopping-list li {
-  padding: 10px 0;
+  padding: 0;
+  margin: 0;
 }
 
-.cs-shopping-list :nth-child(odd) li {
+.cs-shopping-list li:nth-child(odd) {
   background-color: #88839e;
 }
 
-.cs-shopping-list :nth-child(even) li {
+.cs-shopping-list li:nth-child(even) {
   background-color: #7a7593;
 }
 
@@ -51,21 +52,27 @@ header h1 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-label:hover li {
+.cs-shopping-list label {
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+}
+
+label:hover {
   border-top: 3px solid #ffffff;
   border-bottom: 3px solid #ffffff;
   padding: 12px 0;
 }
 
-label:nth-child(even):hover li {
+label:nth-child(even):hover {
   background-color: #625e77;
 }
 
-label:nth-child(odd):hover li {
+label:nth-child(odd):hover {
   background-color: #aba4c4;
 }
 
-label {
+.cs-shopping-list label {
   cursor: pointer;
 }
 
@@ -84,7 +91,7 @@ footer {
   padding: 15px 0;
 }
 
-.cs-shopping-list label:active li {
+.cs-shopping-list label:active {
   background-color: red;
 }
 
