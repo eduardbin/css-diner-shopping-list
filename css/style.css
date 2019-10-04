@@ -84,6 +84,10 @@ footer {
   padding: 15px 0;
 }
 
+.cs-shopping-list label:active li {
+  background-color: red;
+}
+
 * {
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
 }
