@@ -1,0 +1,89 @@
+body {
+  background-color: #3b3f45;
+  font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+  color: #eef6f9;
+}
+
+header {
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 15px 0;
+}
+
+header h1 {
+  margin: 0 0 5px;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cs-shopping-list {
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+}
+
+.cs-shopping-list li {
+  padding: 10px 0;
+}
+
+.cs-shopping-list :nth-child(odd) li {
+  background-color: #88839e;
+}
+
+.cs-shopping-list :nth-child(even) li {
+  background-color: #7a7593;
+}
+
+.cs-shopping-list small {
+  font-size: 12px;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 5px;
+}
+
+.cs-shopping-list input:checked + span {
+  text-decoration: line-through rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+label:hover li {
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  padding: 12px 0;
+}
+
+label:nth-child(even):hover li {
+  background-color: #625e77;
+}
+
+label:nth-child(odd):hover li {
+  background-color: #aba4c4;
+}
+
+label {
+  cursor: pointer;
+}
+
+small::before {
+  content: "(";
+}
+
+small::after {
+  content: ")";
+}
+
+footer {
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  text-align: center;
+  padding: 15px 0;
+}
+
+* {
+  transition: all 0.3s ease-in;
+}
