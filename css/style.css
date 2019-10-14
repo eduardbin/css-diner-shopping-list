@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   background-color: #3b3f45;
   font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
@@ -56,12 +61,13 @@ header h1 {
   display: block;
   margin: 0;
   padding: 10px 0;
+  cursor: pointer;
 }
 
-label:hover {
+.cs-shopping-list label:hover {
   border-top: 3px solid #ffffff;
   border-bottom: 3px solid #ffffff;
-  padding: 12px 0;
+  padding: 7px 0;
 }
 
 label:nth-child(even):hover {
@@ -70,10 +76,6 @@ label:nth-child(even):hover {
 
 label:nth-child(odd):hover {
   background-color: #aba4c4;
-}
-
-.cs-shopping-list label {
-  cursor: pointer;
 }
 
 small::before {
@@ -93,8 +95,4 @@ footer {
 
 .cs-shopping-list label:active {
   background-color: red;
-}
-
-* {
-  transition: all 0.1s ease-in;
 }
